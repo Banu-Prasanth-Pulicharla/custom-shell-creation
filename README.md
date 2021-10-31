@@ -18,11 +18,11 @@ Usage of Shell
 This shell will be doing all the following -
 
 1. Execute commands with multiple arguments. For example:  
-		```
-		banu> Command arg1 arg2 arg3  
-		(Output of Command shown here. Your shell waits for Command to finish)  
-		banu>  
-		```
+	```
+	banu> Command arg1 arg2 arg3  
+	(Output of Command shown here. Your shell waits for Command to finish)  
+	banu>  
+	```
 	
 2. Execute commands in either foreground or background mode. In foreground mode, the shell just waits for the command to complete before displaying the shell prompt again (as in the above example). In background mode, a command is executed with an ampersand & suffix. The shell prompt appears immediately after typing a command name (say Command1) and shell becomes ready to accept and execute the next command (say Command2), even as Command1 continues executing in the background. For example:  
 		```
