@@ -1,10 +1,12 @@
-# custom-shell-creation
+# Custom Shell Creation
 This shell will help one learn about processes and basic process management in a shell.
 
 How To Run?  
 ===========  
 1. compile the customshell.c file using GCC  
+   ```
    gcc -o customshell customshell.c  
+   ```
 2. Run the object file created.  
    ./customshell  
 
