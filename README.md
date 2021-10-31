@@ -8,7 +8,7 @@ How To Run?
    gcc -o customshell customshell.c  
    ```
 2. Run the object file created.  
-   ```
+   ```sh
    ./customshell  
    ```
 
@@ -18,14 +18,14 @@ Usage of Shell
 This shell will be doing all the following -
 
 1. Execute commands with multiple arguments. For example:  
-		```
+		```sh
 		banu> Command arg1 arg2 arg3  
 		(Output of Command shown here. Your shell waits for Command to finish)  
 		banu>  
 		```
 	
 2. Execute commands in either foreground or background mode. In foreground mode, the shell just waits for the command to complete before displaying the shell prompt again (as in the above example). In background mode, a command is executed with an ampersand & suffix. The shell prompt appears immediately after typing a command name (say Command1) and shell becomes ready to accept and execute the next command (say Command2), even as Command1 continues executing in the background. For example:  
-		```
+		```sh
 		banu> Command1 &  
 		banu> Command2  
 		(Output of Command1 and Command2 may interleave here in arbitrary order. Shell waits for Command 2 to finish.)  
