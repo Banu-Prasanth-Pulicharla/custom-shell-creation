@@ -15,7 +15,7 @@ How To Run?
 
 Usage of Shell  
 ==============  
-This shell will be doing all the following -
+This shell (say banu> ) will be doing all the following -
 
 1. Execute commands with multiple arguments. For example:  
 	```
