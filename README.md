@@ -25,50 +25,50 @@ This shell will be doing all the following -
 	```
 	
 2. Execute commands in either foreground or background mode. In foreground mode, the shell just waits for the command to complete before displaying the shell prompt again (as in the above example). In background mode, a command is executed with an ampersand & suffix. The shell prompt appears immediately after typing a command name (say Command1) and shell becomes ready to accept and execute the next command (say Command2), even as Command1 continues executing in the background. For example:  
-		```
-		banu> Command1 &  
-		banu> Command2  
-		(Output of Command1 and Command2 may interleave here in arbitrary order. Shell waits for Command 2 to finish.)  
-		banu>  
-		```
+	```
+	banu> Command1 &  
+	banu> Command2  
+	(Output of Command1 and Command2 may interleave here in arbitrary order. Shell waits for Command 2 to finish.)  
+	banu>  
+	```
 		
 3. Maintain multiple processes running in background mode simultaneously. For example:  
-		```
-		banu> Command1 &  
-		banu> Command2 &  
-		banu> Command3 &  
-		banu>   
-		```
-		(Output of Command1, Command2, and Command3 may interleave here in arbitrary order. Shell does not wait for any of the commands to finish.)  
+	```
+	banu> Command1 &  
+	banu> Command2 &  
+	banu> Command3 &  
+	banu>   
+	```
+	(Output of Command1, Command2, and Command3 may interleave here in arbitrary order. Shell does not wait for any of the commands to finish.)  
 
 		
 4. List all currently running background jobs using "listjobs" command.  
-		```   
-		banu> Command1 &  
-		banu> Command2 &  
-		banu> Command3 &  
-		banu> listjobs  
-		List of backgrounded processes:  
-		Command 1 with PID 1000 Status:RUNNING  
-		Command 2 with PID 1005 Status:RUNNING  
-		Command 3 with PID 1007 Status:FINISHED  
-		banu>  
-		```   
+	```   
+	banu> Command1 &  
+	banu> Command2 &  
+	banu> Command3 &  
+	banu> listjobs  
+	List of backgrounded processes:  
+	Command 1 with PID 1000 Status:RUNNING  
+	Command 2 with PID 1005 Status:RUNNING  
+	Command 3 with PID 1007 Status:FINISHED  
+	banu>  
+	```   
 		
 5. Bring a background process to foreground using the fg command with process ID as argument. For instance, continuing from the previous example:  
-		```   
-		banu> fg 1005  
-		(Shell waits for Command2 to finish.)  
-		banu>  
-		```   
+	```   
+	banu> fg 1005  
+	(Shell waits for Command2 to finish.)  
+	banu>  
+	```   
 
 6. I/O Redirection:  
 	a. Redirect the input of a command from a file. For example:  
-		```  
-		banu> Command < input_file  
-		```  
+	```  
+	banu> Command < input_file  
+	```  
 		
 	b. Redirect the output of a command to a file. For example:  
-		```  
-		banu> Command > output_file
-		```  
+	```  
+	banu> Command > output_file
+	```  
