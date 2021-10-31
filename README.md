@@ -48,3 +48,9 @@ This shell will be doing all the following -
 		(Shell waits for Command2 to finish.)  
 		banu>  
 
+6. I/O Redirection:  
+	a. Redirect the input of a command from a file. For example:  
+		banu> Command < input_file  
+		
+	b. Redirect the output of a command to a file. For example:  
+		banu> Command > output_file
