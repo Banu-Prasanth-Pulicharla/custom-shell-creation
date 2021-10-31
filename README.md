@@ -2,7 +2,7 @@
 This shell will help one learn about processes and basic process management in a shell.
 
 How To Run?  
-===========  
+-----------  
 1. compile the customshell.c file using GCC  
    ```sh
    gcc -o customshell customshell.c  
@@ -14,7 +14,7 @@ How To Run?
 
 
 Usage of Shell  
-==============  
+--------------
 This shell (say, `banu>`) will be doing all the following -
 
 1. Execute commands with multiple arguments. For example:  
