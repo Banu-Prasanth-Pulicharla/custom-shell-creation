@@ -4,7 +4,7 @@ This shell will help one learn about processes and basic process management in a
 How To Run?  
 ===========  
 1. compile the customshell.c file using GCC  
-   ```
+   ``` sh
    gcc -o customshell customshell.c  
    ```
 2. Run the object file created.  
