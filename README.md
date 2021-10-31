@@ -1,6 +1,16 @@
 # custom-shell-creation
 This shell will help one learn about processes and basic process management in a shell.
 
+How To Run?  
+===========  
+1. compile the customshell.c file using GCC  
+   gcc -o customshell customshell.c  
+2. Run the object file created.  
+   ./customshell  
+
+
+Usage of Shell  
+==============  
 This shell will be doing all the following -
 
 1. Execute commands with multiple arguments. For example:  
@@ -37,3 +47,4 @@ This shell will be doing all the following -
 		banu> fg 1005  
 		(Shell waits for Command2 to finish.)  
 		banu>  
+
