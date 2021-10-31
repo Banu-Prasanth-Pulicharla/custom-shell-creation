@@ -26,12 +26,6 @@ This shell (say, `banu>`) will be doing all the following -
 	
 2. Execute commands in either foreground or background mode. In foreground mode, the shell just waits for the command to complete before displaying the shell prompt again (as in the above example). In background mode, a command is executed with an ampersand & suffix. The shell prompt appears immediately after typing a command name (say Command1) and shell becomes ready to accept and execute the next command (say Command2), even as Command1 continues executing in the background. For example:  
 	```sh
-	if [[ "$missing_attributes" ]]; then
-	  echo ".gitattributes rule missing for the following files:";
-	  echo "$missing_attributes";
-	else
-	  echo "All files have a corresponding rule in .gitattributes";
-	fi
 	banu> Command1 &  
 	banu> Command2  
 	(Output of Command1 and Command2 may interleave here in arbitrary order.
@@ -41,12 +35,6 @@ This shell (say, `banu>`) will be doing all the following -
 		
 3. Maintain multiple processes running in background mode simultaneously. For example:  
 	```sh
-	if [[ "$missing_attributes" ]]; then
-	  echo ".gitattributes rule missing for the following files:";
-	  echo "$missing_attributes";
-	else
-	  echo "All files have a corresponding rule in .gitattributes";
-	fi
 	banu> Command1 &  
 	banu> Command2 &  
 	banu> Command3 &  
