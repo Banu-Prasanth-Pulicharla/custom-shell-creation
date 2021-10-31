@@ -28,7 +28,8 @@ This shell will be doing all the following -
 	```
 	banu> Command1 &  
 	banu> Command2  
-	(Output of Command1 and Command2 may interleave here in arbitrary order. Shell waits for Command 2 to finish.)  
+	(Output of Command1 and Command2 may interleave here in arbitrary order.
+	Shell waits for Command 2 to finish.)  
 	banu>  
 	```
 		
@@ -38,8 +39,9 @@ This shell will be doing all the following -
 	banu> Command2 &  
 	banu> Command3 &  
 	banu>   
-	```
-	(Output of Command1, Command2, and Command3 may interleave here in arbitrary order. Shell does not wait for any of the commands to finish.)  
+	(Output of Command1, Command2, and Command3 may interleave here in arbitrary order.
+	Shell does not wait for any of the commands to finish.)  
+	```  
 
 		
 4. List all currently running background jobs using "listjobs" command.  
